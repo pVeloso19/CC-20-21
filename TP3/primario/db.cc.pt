@@ -1,0 +1,47 @@
+$TTL 	604800
+@	IN	SOA	ns.cc.pt.	PL01G08.cc.pt.(
+	         3 		;Serial
+	    604800		;Refresh
+	     86400		;Retry
+	   2419200		;Expire
+	    604800  )		;Negative Cache TTL
+;
+; name servers - NS records
+	IN	NS	ns.cc.pt.
+	IN	NS	ns2.cc.pt.
+
+;SWITCH LAN 1
+Server1		IN	A	10.1.1.1
+ns		IN	A	10.1.1.1
+
+Server2		IN	A	10.1.1.2
+www		IN	CNAME	Server2
+mail		IN	MX	20	Server2
+
+Server3		IN	A	10.1.1.3
+pop		IN	CNAME	Server3
+imap		IN	CNAME	Server3
+mail		IN	MX	10	Server3
+
+;SWICTH LAN 2
+Marte		IN	A	10.2.2.1
+
+Mercurio	IN	A	10.2.2.2
+ns2		IN	A	10.2.2.2
+
+Venus		IN	A	10.2.2.3
+
+;SWITCH LAN 3
+Pico		IN	A	10.3.3.1
+Faial		IN	A	10.3.3.2
+Corvo		IN	A	10.3.3.3
+
+;SWITCH LAN 4
+Laptop1		IN	A	10.4.4.1
+g08		IN	CNAME	Laptop1
+
+Laptop2		IN	A	10.4.4.2
+
+Laptop3		IN	A	10.4.4.3
+    
+
