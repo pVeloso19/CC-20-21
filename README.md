@@ -27,6 +27,7 @@ Este trabalho foi realizado no âmbito da disciplina de CC (2020/21) existente n
 
 <picture>
   <img alt="Funcionamento do servidor DNS" src="https://cdn.discordapp.com/attachments/1002574979252105312/1002577322198695946/Captura_de_ecra_2022-07-29_150337.png?width=593&height=546">
+</picture>
 <picture>
   <img alt="Funcionamento do servidor DNS reverso" src="https://cdn.discordapp.com/attachments/1002574979252105312/1002577322630721596/Captura_de_ecra_2022-07-29_150407.png">
 </picture>
